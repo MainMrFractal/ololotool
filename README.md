@@ -10,16 +10,14 @@ unit test with no internet test parsing arguments
 
 
 
-example: node hello.js get https://www.solvd.com/innovations -s
-params:   [0]  [1]     [2]             [3]                   [4]
+example: node hello.js get https://www.solvd.com/innovations "{stringifyJsonBody}"
+params:   [0]  [1]     [2]             [3]                         [4]       
 
 required params:
 0 - node
 1 - file name 
 2 - http query type
-3 - url
+3 - url "required protocol https/http
 
 optional  params:
-
-4 - with key "-s" will send as https.
-
+4 - stringifyJsonBody
